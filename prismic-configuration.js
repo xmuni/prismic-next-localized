@@ -9,3 +9,7 @@ export const accessToken = process.env.PRISMIC_ACCESS_TOKEN
 
 // Client method to query Prismic
 export const client = Prismic.client(apiEndpoint, { accessToken })
+
+export function toIso(locale) {
+  return locale=='en' ? 'en-us' : 'it-it'
+}
